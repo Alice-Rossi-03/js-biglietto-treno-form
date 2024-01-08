@@ -1,0 +1,9 @@
+.myContainer{
+    width: 70%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.fontBold{
+    font-weight: bolder;
+}
