@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Ticket Exercise</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
@@ -15,31 +15,68 @@
         <h1 class="text-center mt-4 p-2 bg-primary fit-content text-light">Find Your Train Ticket!</h1>
 
         <div class="myContainer">
-            <h3 class="text-capitalize bg-primary text-center text-light p-2 mb-2">Evaluate your train ticket price:</h3>
+            <h2 class="text-capitalize bg-primary text-center text-light p-2 mb-4">Evaluate your train ticket price:</h2>
 
             <form method="post" class="d-flex flex-column gap-2">
 
                 <div>
-                    <label for="name-surname" class="form-label text-primary fontBold">Name & Surname:</label>
-                    <input type="text" name="name-surname" id="name-surname" class="w-100 form-control">
+                    <label for="clientName" class="form-label text-primary fontBold">Name & Surname:</label>
+                    <input id="clientName" type="text" name="name-surname" class="w-100 form-control">
                 </div>
                 
                 <div>
-                    <label for="distance" class="form-label text-primary fontBold">Distance:</label>
-                    <input type="number" name="distance" id="distance" class="w-100 form-control">
+                    <label for="clientDistance" class="form-label text-primary fontBold">Distance:</label>
+                    <input id="clientDistance" type="number" name="distance" class="w-100 form-control">
                 </div>
                 
                 <div>
-                    <label for="age" class="form-label text-primary fontBold">Your Age:</label>
-                    <input type="number" name="age" id="age" class="w-100 form-control">
+                    <label for="clientAge" class="form-label text-primary fontBold">Your Age:</label>
+                    <input id="clientAge" type="number" name="age" class="w-100 form-control">
                 </div>
                 
+
+                <div class="w-100 text-center mt-4">
+                    <button id="btnSubmit" type="submit" class="w-25 btn btn-primary">Submit</button>
+                    <button id="btnClear" type="submit" class="w-25 btn btn-danger">Clear All</button>
+                </div>
             </form>
+
+
+            <h2 class="text-capitalize bg-primary text-center text-light p-2 mb-4 mt-5">Your Ticket:</h2>
+
+            <div>
+                <div class="d-flex">
+                    <h5 class="w-50 text-capitalize bg-primary text-light p-2 m-0">Your Name:</h5>
+                    <div class="w-50 text-capitalize bg-primary text-light p-2"></div>
+                </div>
+                <div>
+                    <div class="border d-flex">
+                        <h5 class="w-50 text-capitalize bg-primary text-light p-2 m-0">Your Ticket:</h5>
+                        <div class="w-50 text-capitalize p-2"></div>
+                    </div>
+                    <div class="border d-flex">
+                        <h5 class="w-50 text-capitalize bg-primary text-light p-2 m-0">Your Train Carriage:</h5>
+                        <div class="w-50 text-capitalize p-2"></div>
+                    </div>
+                    <div class="border d-flex">
+                        <h5 class="w-50 text-capitalize bg-primary text-light p-2 m-0">CP Code:</h5>
+                        <div class="w-50 text-capitalize p-2"></div>
+                    </div>
+                    <div class="border d-flex">
+                        <h5 class="w-50 text-capitalize bg-primary text-light p-2 m-0">Ticket Price:</h5>
+                        <div id="ticket-price" class="w-50 text-capitalize p-2"></div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </main> 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <script type="text/js" src="./assets/script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="./assets/script/main.js"></script> 
+
 </body>
 </html>
