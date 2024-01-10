@@ -1,9 +1,22 @@
 .myContainer{
     width: 70%;
     margin: 0 auto;
-    padding: 3em;
+    padding: 2em;
+}
+
+.form-control{
+    width: 95%;
 }
 
 .fontBold{
     font-weight: bolder;
 } 
+
+.rounded-bottom{
+    border-radius: 1;
+}
+
+.rounded-top{
+    border-radius: 1;
+}
+
