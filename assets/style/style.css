@@ -12,11 +12,11 @@
     font-weight: bolder;
 } 
 
-.rounded-bottom{
-    border-radius: 1;
+
+.row>*{
+    padding: 0;
 }
 
-.rounded-top{
-    border-radius: 1;
+.margin-right{
+    margin-right: 1em;
 }
-
